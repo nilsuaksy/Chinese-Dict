@@ -1,0 +1,40 @@
+body {
+    background-image: url("wallpaper.jpg");
+    background-color: #ffffff;
+
+    background-size: cover;
+    background-position: center;
+   }
+
+   #box  {
+    background-color: rgb(242, 222, 202);
+    border: 1px solid #000000;
+    width: 300px;
+    height: 300px;
+  }
+
+li a:hover {
+    color: rgb(154, 6, 6);
+    text-decoration: none;
+    display: inline;
+}
+
+li b:hover {
+    color: rgb(154, 6, 6);
+    text-decoration: none;
+    display: inline;
+}
+
+p a:hover {
+    color: rgb(6, 154, 13);
+    text-decoration: none;
+    display: inline;
+}
+
+.renk {
+    color: rgb(255, 0, 242);
+    text-decoration: none;
+}
+.renk:hover {
+    color: rgb(6, 154, 13);
+}

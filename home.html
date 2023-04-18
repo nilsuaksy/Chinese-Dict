@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html lang="tr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Çince Sözlüğüm </title>
+
+    <style>
+      li {
+          display: inline;
+      }
+  </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="sözlük.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a style="color: #ff0000c0;" class="navbar-brand" href="#"><b>Dict</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a style="color: #ffffffc0;" class="nav-link active" aria-current="page" href="home.html"> <b>Anasayfa</b> </a>
+              </li>
+              <li class="nav-item">
+                <a style="color: #ffffffc0;" class="nav-link" href="aboutme.html"><b>Hakkımda</b></a>
+              </li>
+              <li class="nav-item">
+                <a style="color: #ffffffc0;" class="nav-link" href="exams.html"><b>Sınavlar</b></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a style="color: #ffffffc0;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <b>Kelimeler</b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li> <a style="color: #ffffffc0;" class="dropdown-item" href="hsk1.html"><b>HSK1</b></a></li>
+                  <li> <a style="color: #ffffffc0;" class="dropdown-item" href="hsk2.html"><b>HSK2</b></a></li>
+                  <li> <a style="color: #ffffffc0;" class="dropdown-item" href="hsk3.html"><b>HSK3</b></a></li>
+                  <li> <a style="color: #ffffffc0;" class="dropdown-item" href="#"><b>HSK4</b></a></li>
+                  <li> <a style="color: #ffffffc0;" class="dropdown-item" href="#"><b>HSK5</b></a></li>
+                  <li> <a style="color: #ffffffc0;" class="dropdown-item" href="#"><b>HSK6</b></a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a style="color: #ffffffc0;; font-style: italic;" class="nav-link" href="contact.html"><b>İletişim</b></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" style="width: 500px;">
+              <input class="form-control me-2" type="search" placeholder="Türkçe veya Çince olarak ara" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">tıklatıklatıkla  </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+<div style="display: flex; margin-top: 1%;">
+<img src ="https://upload.wikimedia.org/wikipedia/commons/1/12/%E6%B1%89.png" 
+      width="15%"> 
+<h1 style="margin-top: 2%; color: rgb(192, 15, 15);" >Çince Sözlüğüm'e hoşgeldiniz!</h1>
+
+      <div id="box" style="color: #880a34c0; margin-left: 10px; margin-top: 1%; padding-top: 1%; padding-left: 10px; border: 3px solid rgb(0, 0, 0); margin-left: 1%; padding-right: 3%; position:relative; left:400px; top:2px" > 
+           <b> Üye girişi yapınız. </br> </br>
+                    <form>
+                            <div class="mb-3 form-control-sm input-group-sm" style="display: flex; width: 110%;">
+                              <label for="exampleInputEmail1" class="form-label">Email</label>
+                              <input placeholder="Eposta Adresi" type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" value="nilsug.aksoy@gmail.com"> 
+                            </div>
+
+                            <div class="mb-3 form-control-sm input-group-sm" style="display: flex; width: 110%;">
+                              <label for="exampleInputPassword1" class="form-label">Şifre</label>
+                              <input placeholder="Şifre" type="password" class="form-control" id="PasswordInput" value="123456">
+                            </div>
+                          </b>
+                            <div class="mb-3 form-check form-control-sm">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Ben robot değilim.</label>
+                            </div>
+                            <button id="formButton" type="button" class="btn btn-primary">Giriş yapın</button>
+                            <a class="btn btn-primary" href="üyeol.html" role="button">Üye Olun</a>
+                    </form> 
+      </div>
+      <script>
+        let degisken = "bir değişken";
+        const degiskeni = "";
+
+        document.getElementById("formButton").addEventListener("click", function() {
+            const emailAddress = document.getElementById("emailInput").value; 
+            const password = document.getElementById("PasswordInput").value
+            console.log(emailAddress, password)
+
+           // alert(emailAddress)
+        });
+        
+    </script>
+</div>
+
+      <p style="color: #000000c0; margin-left: 10px; margin-top: 3%;" >  
+      <b> İşte günün en çok aranan 5 kelimesi! </b> </p>
+      <b>
+      <div style="display: flex; padding-left: 40px; border: 3px solid rgb(0, 0, 0); margin-left: 1%">
+          <p style="color: rgb(9, 255, 0); font-size: 700%;"> 我 </p>
+          <p style="margin-left: 2cm; margin-top: 1cm;" > wǒ </br> zam. (1. tekil şahıs)	ben, -um, -üm, -im, -ım </p>
+      </div>
+
+      <hr style="border-top: none; background-color: rgb(255, 0, 0); opacity: 0.5; " size="4" width="100%" >  
+
+      <div style="display: flex; padding-left: 40px; border: 3px solid rgb(0, 0, 0); margin-left: 1%">
+          <p style="color: rgb(255, 123, 0); font-size: 700%;"> 你 </p>
+          <p style="margin-left: 2cm; margin-top: 1cm;" > nǐ </br> zam. sen </p>
+      </div>
+
+      <hr style="border-top: none; background-color: rgb(255, 0, 0); opacity: 0.5; " size="4" width="100%" >  
+
+      <div style="display: flex; padding-left: 40px; border: 3px solid rgb(0, 0, 0); margin-left: 1%">
+          <p style="color: rgb(255, 0, 255); font-size: 700%;"> 张 </p>
+          <p style="margin-left: 2cm; margin-top: 1cm;" > zhāng </br> sayfa </p>
+      </div>
+
+      <hr style="border-top: none; background-color: rgb(255, 0, 0); opacity: 0.5; " size="4" width="100%" >  
+
+      <div style="display: flex; padding-left: 40px; border: 3px solid rgb(0, 0, 0); margin-left: 1%">
+          <p style="color: rgb(0, 4, 255); font-size: 700%;"> 爱 </p>
+          <p style="margin-left: 2cm; margin-top: 1cm;" > ài </br> sevgi, aşık olmak, sevmek, ilgilenmek, hoşlanmak </p>
+      </div>
+
+      <hr style="border-top: none; background-color: rgb(255, 0, 0); opacity: 0.5; " size="4" width="100%" >  
+
+      <div style="display: flex; padding-left: 40px; border: 3px solid rgb(0, 0, 0); margin-left: 1%">
+          <p style="color: rgb(255, 208, 0); font-size: 700%;"> 好 </p>
+          <p style="margin-left: 2cm; margin-top: 1cm;" > hǎo </br> iyi, sağlıklı, güzel</p>
+      </div>
+    </b>
+<br>
+    <p style="margin-left: 1%; font-style: italic; color: #880a34c0">Eğer hakkımda daha çok bilgi edinmek istiyorsan <a class="renk" href="Aboutme.html"> buraya tıklayabilirsin! </a> </p> 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
+
+</html>
